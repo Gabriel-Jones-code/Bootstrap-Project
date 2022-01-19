@@ -152,7 +152,7 @@
             <div class="container">
               <h1 class='display-4 hidden-sm-down' style='color:#fff;font-family:roboto;font-weight:900;text-transform:uppercase;'>
                 Check out our monthly deals...</h1>
-              <button type='button' class='btn btn-outline-primary' data-toggle='model' data-target='#register'>See our monthly movie deals!</button>
+                <button class='btn btn-primary btn-info' type="button" data-toggle="modal" data-target="#forms">See our deals</button>
             </div>
           </div>
           <!-- /showTimes -->
@@ -164,12 +164,34 @@
               <div class="form-group">
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
               </div>
-              <button type="button" class="btn btn-primary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="By entering your email, you are agreeing to receive messages for special movie deals">
+              <button type="button" class="btn btn-info popover-dismiss" data-container="body" data-toggle="popover" data-target='#popover-dismiss' data-placement="top" data-content="By entering your email, you are agreeing to receive messages for special movie deals">
                 Sign Up!
               </button>
             </form>
           </div>
 
+          <!-- Modal -->
+            <div class="modal fade" id="forms" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign up!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <!--Contact-->
           <div class="container my-5">
             <ul class="nav nav-inline">
             <li class="nav-item">
